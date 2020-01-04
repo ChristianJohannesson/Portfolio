@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+      <div id="wrapper">
+            <img src="certificate.png" style="width: 375px; position: absolute; overflow: hidden;"/>
+            <!--<div class="check-outline" style="transform: translate(300px, 140px)"></div>-->
+
+            <div class="element" style="transform: translate(188px, 462px);">
+                    <div class="check-outline" class="element"></div>
+
+                <img id="check" class="element" src="checkmark.svg"/>
+                            </div>
+            <div id="guilloche" class="element" style="margin: 0 auto;">
+                <img id="blaj" class="element" src="guilloche.svg"/>
+                <img id="blaj2" class="element" src="guilloche.svg" />
+                </div>
+            </div>
+        </div>
+       
+  </body>
+</html>
+<style>
+    #wrapper {
+        position: relative;
+        width: 375px;
+        height: 812px;
+        overflow: hidden;
+    }
+    #blaj {
+        position: absolute;
+        animation: spin-right 250s linear infinite;
+    }
+    #blaj2 {
+        position: absolute;
+        animation: spin-left 250s linear infinite;
+    }
+    #guilloche {
+        padding-top: 600px;
+        padding-left: 200px;
+    }
+    #check {
+        transform: scale(1.5);
+        position: absolute;
+        animation: scale-size 1.5s ease-in-out infinite;
+    }
+  .check-outline {
+      position: absolute;
+        top: 8px;
+        left: 8px;
+        height: 10px;
+        width: 10px;
+        border: 1px solid #21D395;
+        border-radius: 50%;
+        animation: scale-outline 1.5s ease-out infinite;
+    }
+
+    @keyframes spin-right {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes spin-left {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(-360deg);
+        }
+    }
+    </style>
+    <script>
+        var elements = document.querySelectorAll('.element');
+
+            for (var i = 0; i < elements.length; i++) {
+            elements[i].onclick = toggleAnimation;
+            elements[i].style.webkitAnimationPlayState = 'running';
+            }
+
+            function toggleAnimation() {
+            var style;
+            for (var i = 0; i < elements.length; i++) {
+                style = elements[i].style;
+                if (style.webkitAnimationPlayState === 'running') {
+                style.webkitAnimationPlayState = 'paused';
+                document.body.className = 'paused';
+                } else {
+                style.webkitAnimationPlayState = 'running';
+                document.body.className = '';
+                }
+            }
+            }
+    </script>

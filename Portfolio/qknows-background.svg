@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1243px" height="472px" viewBox="0 0 1243 472" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Wave</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.2">
+        <g id="Artboard" transform="translate(0.000000, -183.000000)" fill="#3497FD" fill-rule="nonzero">
+            <path d="M-0.175438596,183.178614 C26.3418947,464.12308 88.2156725,513.624469 185.445895,331.682781 C331.291228,58.7702498 300.157792,767.952709 387.640561,494.425414 C475.12333,220.898119 695.904561,641.066464 811.917895,401.809749 C927.931228,162.553035 961.077895,589.303077 1037.31523,494.425414 C1088.14012,431.173639 1156.64323,456.678333 1242.82456,570.939496 L1242.82456,654.178614 L-0.175438596,654.178614 L-0.175438596,183.178614 Z" id="Wave" transform="translate(621.324561, 418.678614) scale(-1, 1) translate(-621.324561, -418.678614) "></path>
+        </g>
+    </g>
+</svg>

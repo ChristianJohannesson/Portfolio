@@ -1,0 +1,447 @@
+* {
+  font-family: "Be Vietnam", Arial, sans-serif !important;
+  //color: #2c3e50;
+  color: #212121;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+
+h1 {
+  font-size: 7vw;
+  line-height: 9vw;
+}
+
+h2 {
+  font-size: 5vw;
+}
+
+h3 span {
+  color: white;
+  font-size: 3vw;
+}
+#spectra {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #212121, #212121);
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
+label {
+  color: #868686;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+h2 span,
+h2 span a,
+h2 span a:hover,
+p span,
+p span a,
+p span a:hover {
+  color: white;
+}
+
+a {
+  color: white !important;
+}
+
+p.secondary {
+  margin-left: 0.5rem;
+  opacity: 0.5;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  padding: 5% 10%;
+}
+
+.section-background {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transform: translateX(-10%);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column {
+  width: calc(100% / 2 - 1rem);
+}
+
+.column-33 {
+  flex: 0 0 calc(100% / 3 - 1rem);
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.logo-container {
+  height: 20vh;
+  width: auto;
+}
+
+.blob-container {
+  position: relative;
+  top: -3em;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  padding: 5% 0%;
+}
+
+.iphone {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  background-color: transparent;
+  background-image: url("iphone8.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 240px;
+  min-height: 490px;
+}
+#kreditz-mockups {
+  display: flex;
+  justify-content: center;
+}
+
+.demo-video {
+  position: absolute;
+  margin-top: 22.9%;
+  margin-left: 6.66%;
+  width: 86.25%;
+  background-color: transparent;
+}
+
+.macbook {
+  display: block;
+  position: relative;
+  background-image: url("macbook-pro.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 100%;
+  visibility: visible;
+}
+
+#vntrs-iphone {
+  visibility: hidden;
+}
+
+#vntrs-macbook {
+  display: block;
+  position: absolute;
+  margin-left: 12.33%;
+  width: 75.33%;
+  margin-top: 3.33%;
+  height: auto;
+}
+.tool-list {
+  display: block;
+  padding: 0;
+  li {
+    list-style: none;
+    p {
+      display: inline;
+    }
+  }
+}
+
+.tool-list img {
+  margin-right: 1rem;
+  height: 24px;
+  width: auto;
+  display: inline-block;
+}
+
+.scrolling-wrapper {
+  width: 100vw;
+  margin-left: -10vw;
+  padding-bottom: 3rem;
+  padding-right: 100px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.scrolling-container {
+  height: 35rem;
+  padding-left: 10vw;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  white-space: nowrap;
+}
+.scrolling-container::-webkit-scrollbar {
+  display: none;
+}
+.bouncing {
+  font-family: "Permanent Marker", cursive !important;
+}
+
+.clip-wrapper {
+  margin: 20px 0;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+  h3 span a {
+    font-size: 1.5rem;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+label {
+    font-size: 1.2rem;
+  }
+
+  .section-content {
+    display: block;
+  }
+  .scrolling-container {
+    height: 65vh;
+  }
+
+  .macbook {
+    visibility: hidden;
+  }
+
+  #vntrs-iphone {
+    margin: 0 auto;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .section {
+    display: flex;
+  }
+  .align-center {
+    display: flex;
+  }
+
+  .section-content {
+    display: flex;
+  }
+  .macbook {
+    height: 640px;
+  }
+  #guilloche {
+    position: absolute;
+    width: 500px;
+    transform:translate(40vw, -700px);
+    z-index: -999999;
+  }
+}
+
+.card {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: fit-content;
+  margin-right: 5%;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.24);
+  &:last-child{
+    margin-right: 10vw;
+  }
+}
+
+.card img {
+  height: 100%;
+}
+
+/*kreditz guilloche*/
+
+#guilloche-container {
+  width: 60%;
+  position: absolute;
+}
+
+#guilloche {
+  position: absolute;
+  width: 500px;
+  transform: translate(65vw, -700px);
+  z-index: -999999;
+  animation-play-state: running;
+}
+
+#blaj {
+  position: absolute;
+  animation: spin-right 250s linear infinite;
+}
+#blaj2 {
+  position: absolute;
+  animation: spin-left 250s linear infinite;
+}
+
+@keyframes spin-right {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+@keyframes spin-left {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(-360deg);
+  }
+}
+
+/*autoplay*/
+
+.video{
+    max-width: 600px;
+    position: relative;
+    &.playing{
+      .play{
+        opacity: 0;
+      }
+    }
+  }
+  
+  .play{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+
+    display: flex;
+    margin-top: 22.9%;
+    margin-left: 6.66%;
+    width: 86.25%; 
+    height: 100%;
+}
+
+  video{
+    position: relative;
+    width: 100%;
+  }
+
+  /*Svg signature*/
+
+
+  svg {
+    transform: scale(1);
+  }
+  
+  path {
+    stroke-dasharray: 2900;
+    animation: drawSignature 10s infinite;
+  }
+  #Path_2 {
+    stroke-dasharray: 2900;
+    animation: drawSignature 10s infinite;
+  }
+
+  #Path_3 {
+    stroke-dasharray: 20;
+    stroke-dashoffset: 20;
+    animation: drawDots1 10s infinite;
+  }
+
+  #Path_4 {
+    stroke-dasharray: 20;
+    stroke-dashoffset: 20;
+    .animating {
+      animation: drawDots2 10s infinite;
+    }
+  }
+  
+  @keyframes drawSignature {
+    0% {
+      stroke-dashoffset: 2900;
+    }
+    50% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: -2900;
+    }
+  }
+
+  @keyframes drawDots1 {
+    0% {
+      stroke-dashoffset: 20;
+    }
+    35% {
+      stroke-dashoffset: 20;
+    }
+    40% {
+      stroke-dashoffset: 0;
+    }
+    80% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: -20;
+    }
+  }
+
+  @keyframes drawDots2 {
+    0% {
+      stroke-dashoffset: 20;
+    }
+    37% {
+      stroke-dashoffset: 20;
+    }
+    43% {
+      stroke-dashoffset: 0;
+    }
+    85% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: -20;
+    }
+  }
+
